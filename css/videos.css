@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#cabecalho{
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo{
+    width: 70px;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    text-decoration: none;
+    color:#0f8;
+    display: block;
+    padding: 15px 30px;
+    transition: all 0.3s linear;
+}
+
+#cabecalho nav li a:hover{
+    border-radius: 50px;
+    background:#2f2a41;
+    box-shadow: 0px 0px 40px #0f8052;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #fff;
+    background: #121018;
+}
+
+.voltar {
+    display: block;
+    background: #121018;
+    padding: 8.5px;
+    width: 100%;
+    border-top: 0.4px solid #0f8;
+}
+
+.voltar a{
+    background: #2f2a41 ;
+    text-decoration: none;
+    color: #0f8;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    bottom: 3px;
+}
+
+.voltar a::before{
+    content: "\276E";
+    margin-right: 5px;
+}
+
+.voltar a:hover{
+    box-shadow: 0px 0px 40px #0f8052;
+}
+
+.titulo-secao{
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#videos{
+    background-color: #121018;
+    padding: 50px 0;
+}
+
+#videos #videos-lista{
+    padding:0 85px 85px 85px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 35px;
+}
+
+#videos-lista a{
+    margin-top: 10px;
+    justify-content: center;
+    text-decoration: none;
+    color: #0f8;
+}
+
+.documentario{
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+}
+.documentario iframe{
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    aspect-ratio: 16/9; /*proporção do video*/
+    margin: 0 auto;
+}

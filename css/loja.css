@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --color1: #0f8;
+    --color2: #201b2c;
+    --color3: #77ffc0;
+    --color4:#0f8052;
+    --color5:#121018;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#cabecalho{
+    background-color: #121018;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo{
+    width: 70px;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    text-decoration: none;
+    color:#0f8;
+    display: block;
+    padding: 15px 30px;
+    transition: all 0.3s linear;
+}
+
+#cabecalho nav li a:hover{
+    background-color: #2f2a41;
+    box-shadow: 0px 0px 40px #0f8052;
+    border-radius: 50px;
+}
+
+#versoes{
+    padding: 50px;
+}
+
+#versoes #modelos{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+}
+
+#versoes #modelos img{
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+.titulo-secao{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-size: 50px;
+    justify-content: center;
+    font-weight: 700;
+    color: #201b2c;
+    padding:10px 10px 60px 10px;
+}
+
+#versoes #modelos h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#versoes #modelos ul{
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+#versoes #modelos ul li{
+    margin-bottom: 10px;
+}
+
+#versoes #modelos .but-comprar{
+    display: block;
+    max-width: 150px;
+    background-color: var(--color1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--color2);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s linear;
+    margin-bottom: 20px;
+}
+
+#versoes #modelos .but-comprar:hover{
+    box-shadow: 0px 0px 40px #0f8052;
+}
+
+#versoes #modelos .but-saiba-mais{
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+#versoes #modelos .but-saiba-mais:hover{
+    text-decoration: underline;
+}
+
+#versoes #modelos .but-saiba-mais::after{
+    content: "\276f";
+    margin-left: 5px;
+}
+
+.itens img:hover{
+    transform: scale(1.2);
+}
+
+#lista{
+    padding: 20px 0;
+    border-top: 0.5px outset #0f8;
+}
+
+#lista #terrenos{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 70px;
+    padding-left: 30px;
+}
+
+#lista #terrenos img{
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#lista #terrenos h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#lista #terrenos ul{
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+#lista #terrenos ul li{
+    margin-bottom: 10px;
+}
+
+#lista #terrenos .but-comprar{
+    display: block;
+    max-width: 150px;
+    background-color: var(--color1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--color2);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s linear;
+    margin-bottom: 20px;
+}
+
+#lista #terrenos .but-comprar:hover{
+    box-shadow: 0px 0px 40px #0f8052;
+}
+
+#lista #terrenos .but-saiba-mais{
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+#lista #terrenos .but-saiba-mais:hover{
+    text-decoration: underline;
+}
+
+#lista #terrenos .but-saiba-mais::after{
+    content: "\276f";
+    margin-left: 5px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fotos.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script>$(document).ready(function() {
+        $('#galeria-fotos').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr;
+                }
+            }
+        });
+    });</script>
+    <title>Galeria de Fotos</title>
+</head>
+<body>
+   <header id="cabecalho">
+    <div class="container">
+        <a href="../index.html"><img src="../imagens/spacerocketlogo.png" id="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="voltar">
+    <a href="home.html">Voltar</a>
+</div>
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">Galeria de Fotos da NASA Image and Video Library</h2>
+            <div id="galeria-fotos">
+                <a href="../imagens/galaxia.jpg" title="Foto 1"><img src="../imagens/galaxia.jpg" alt="">Andromeda Galaxy</a>
+                <a href="../imagens/foguete.jpg" title="Foto 2"><img src="../imagens/foguete.jpg" alt="">Foguete</a>
+                <a href="../imagens/imagem01.jpeg" title="Foto 3"><img src="../imagens/imagem01.jpeg" alt="">Pacific Ocean From the Space Station</a>
+                <a href="../imagens/imagem02.jpg" title="Foto 4"><img src="../imagens/imagem02.jpg" alt="">Hubble Captures Vivid Auroras in Jupiter Atmosphere</a>
+                <a href="../imagens/imagem03.jpg" title="Foto 5"><img src="../imagens/imagem03.jpg" alt="">Astronaut John Young leaps from lunar surface to salute flag</a>
+                <a href="../imagens/imagem04.jpg" title="Foto 6"><img src="../imagens/imagem04.jpg" alt="">The Earth & Moon</a>
+                <a href="../imagens/galaxia2.jpg" title="Foto 7"><img src="../imagens/galaxia2.jpg" alt="">Galaxy</a>
+                <a href="../imagens/imagem06.jpg" title="Foto 8"><img src="../imagens/imagem06.jpg" alt="">Neptune</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
